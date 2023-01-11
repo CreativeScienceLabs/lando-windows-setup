@@ -12,13 +12,14 @@
 
 ### INSTALLING LANDO
 1. Download the latest Lando .deb package 
-    1. see available packages [here](https://github.com/lando/lando/releases)
+    1. see available packages [here](https://github.com/lando/lando/releases) 
+        1.  get the link for the most uptodate release, from the available release page
+        2.  note `lando-x64-v3.8.1.deb` is the most uptodate release version at the moment. 
     1. open your Winodws Terminal as administrator
-    2. 
-    3. wget https://github.com/lando/lando/releases/download/v3.8.1/lando-x64-v3.8.1.deb
-2. Install Lando package
+    1. input the following command on your terminal `wget https://github.com/lando/lando/releases/download/v3.8.1/lando-x64-v3.8.1.deb`
+1. Install Lando package
     1. sudo dpkg -I —ignore-depends=docker-ce lando-x64-v3.8.1.deb
-3. Confirm Lando was installed 
+1. Confirm Lando was installed 
     1. Lando —help
 
 ### SYNC LANDO WITH Pantheon
