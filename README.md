@@ -12,7 +12,7 @@
 
 ### INSTALLING LANDO
 1. Download the latest Lando .deb package 
-    1. see available packages (here)[https://github.com/lando/lando/releases`]
+    1. see available packages (here)[https://github.com/lando/lando/releases]
     1. open your Winodws Terminal as administrator
     2. 
     3. wget https://github.com/lando/lando/releases/download/v3.8.1/lando-x64-v3.8.1.deb
