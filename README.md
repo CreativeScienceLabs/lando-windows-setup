@@ -19,4 +19,23 @@
 1. Confirm Lando was installed by running `lando —help`
 
 ### SYNC LANDO WITH Pantheon
-1. Create a folder on your system where you want to store the project ie. `mkdir`
+1. With Lando installed on your __WSL 2__ system you can now sync your __Lando instance__ with Pantheon
+    1. Note. Make sure to have __Docker Desktop__ active on your computer. 
+    2. You will required to have a `Machine token` from Pantheon. See process [here](https://pantheon.io/docs/machine-tokens)
+2. Create a folder on your system where you want to store the project ie. `mkdir lsc9`
+3. Access the folder you just created `cd lsc9`
+4. Start lando `lando init`
+    1. Make sure to take note of the __URL__ to access your local server, that lando will provide once the this process is completed
+5. Lando will start the initialization process apply the following options when prompted
+    1.  source `Phaeton`
+    2.  Pantheon Auth `paste machine token from pantheon`
+    3.  Pantheon site name `select from the list of available projects the one you wish to copy to your local machine`
+6. Once the above process is completed successfully. Start lando `lando start`
+7. Input assets from pantheon. `lando pull`
+    1. In this process you can choose what will be downloaded from pantheon into your local machine and select which branch will be used
+    2. Select branch to copy files from `development/testing/production`
+    3. Choose if you like to download the Database
+    4. Choose if you like to download the files (media files). Please note that downloading files from pantheon could take some time depending on the amount of files that exists on the branch selected. 
+8. Process completed.  
+    1. You can now open your browser and paste the lando local URL provided before
+    2. You should be able to access the backend of your local installation using the same credentials of the branch you selected while installing the local project. 
