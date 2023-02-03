@@ -1,7 +1,7 @@
 # Laragon windows setup
 
 ### Requeriments 
-1. [Git account]([url](https://github.com/)
+1. [Active Git account](https://github.com/)
 
 ### Installation
 1. Download laragon from the official [webiste](https://laragon.org/download/index.html) - make sure to download the full version
@@ -60,5 +60,6 @@
 ### Adding project's media and files (optional)
 1. Please note that this step is optional, the project will be functional but it won't display any media.
 2. For development the Media folder is often skipped due to it's large size. 
-3. 
+3. You can download the files from your project from the `backups` option in pantheon. 
+4. once the files are donwloaded you can move the folder into `web/sites/default/files`
 
