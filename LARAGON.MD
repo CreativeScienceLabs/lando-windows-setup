@@ -48,5 +48,17 @@
 20. once the process is completed. you can press `f5` to refresh the DB and see all the imported data.
 
 ### Completing the setup by connection the project to the DB.
+1. Create the local settings file.
+2. download the `settings.local.php` from the [repository](https://github.com/CreativeScienceLabs/lando-windows-setup/blob/main/settings.local.php) into the `web\sites\default\`
+3. Add the `settings.local.php` file into ***gitignore***.
+4. Open the `.gitignore` file at the root of the project on your favorite editor, and add the follwing line at the end of the file `sites/*/settings.local.php`
+5. Settup is complete now you can open the project.
+  1. Open the ***Laragon*** interface and click for the **Menu** option at the top left corner
+  2. Click on the `www` option and then look for the click on the `lcs-d9` to open the project on your browser
+  3. Alternately you can navigate to `http://lsc-d9.test/` on your browser.
 
+### Adding project's media and files (optional)
+1. Please note that this step is optional, the project will be functional but it won't display any media.
+2. For development the Media folder is often skipped due to it's large size. 
+3. 
 
